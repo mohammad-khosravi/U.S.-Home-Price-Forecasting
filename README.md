@@ -1,2 +1,2 @@
 # U.S.-Home-Price-Forecasting
-Predict average yearly salaries for data-related job postings using structured and unstructured job listing features.
+Forecast U.S. median home prices using historical trends and seasonal patterns.
