@@ -1,6 +1,3 @@
-# U.S.-Home-Price-Forecasting
-Forecast U.S. median home prices using historical trends and seasonal patterns.
----
 # Predicting U.S. Median Home Prices
 
 Goal: Forecast U.S. median home prices using historical trends and seasonal patterns.
@@ -42,7 +39,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![U.S. Median Home Prices Over Time.png](Predicting%20U%20S%20Median%20Home%20Prices%201d5f195e1902807986b8d69412a96db9/U.S._Median_Home_Prices_Over_Time.png)
+![U S  Median Home Prices Over Time](https://github.com/user-attachments/assets/08c01ea1-3f8f-4172-8eb1-e53e2c0498c6)
 
 Here's the plot of U.S. median home prices over time.
 
@@ -77,7 +74,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Rolling Mean and Standard Deviation.png](Predicting%20U%20S%20Median%20Home%20Prices%201d5f195e1902807986b8d69412a96db9/Rolling_Mean_and_Standard_Deviation.png)
+![Rolling Mean and Standard Deviation](https://github.com/user-attachments/assets/46566f22-bfb5-4ddf-8fa3-2a8b4e031323)
 
 This plot shows that both the rolling mean and standard deviation change significantly over time, especially with an upward drift in the mean and volatility around the 2008 crisis. That tells us the series is **not stationary**, which means we’ll need to difference the data before modeling.
 
@@ -121,7 +118,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Differenced Time Series (1st Order).png](Predicting%20U%20S%20Median%20Home%20Prices%201d5f195e1902807986b8d69412a96db9/Differenced_Time_Series_(1st_Order).png)
+![Differenced Time Series (1st Order)](https://github.com/user-attachments/assets/6d7b7c56-8910-4828-b7e8-97a66912a951)
 
 Here’s the differenced time series. The overall trend is now gone, and we’re looking at how much prices changed each month.
 
@@ -151,8 +148,8 @@ fig.set_size_inches(14, 10)
 plt.tight_layout()
 plt.show()
 ```
+![seasonal_decomposition_us_home_prices](https://github.com/user-attachments/assets/23f0a0b3-5474-48c0-ac3d-f9d58a725670)
 
-![seasonal_decomposition_us_home_prices.png](Predicting%20U%20S%20Median%20Home%20Prices%201d5f195e1902807986b8d69412a96db9/seasonal_decomposition_us_home_prices.png)
 
 This decomposition plot breaks the original time series into three components:
 
@@ -224,7 +221,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![ACF and PACF plots.png](Predicting%20U%20S%20Median%20Home%20Prices%201d5f195e1902807986b8d69412a96db9/ACF_and_PACF_plots.png)
+![ACF and PACF plots](https://github.com/user-attachments/assets/ff34a93d-6491-40c6-840f-77a864b45de9)
 
 These plots help us decide the ARIMA parameters:
 
@@ -268,7 +265,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![ARIMA(1,1,1) Forecast of U.S. Median Home Prices.png](Predicting%20U%20S%20Median%20Home%20Prices%201d5f195e1902807986b8d69412a96db9/ARIMA(111)_Forecast_of_U.S._Median_Home_Prices.png)
+![ARIMA(1,1,1) Forecast of U S  Median Home Prices](https://github.com/user-attachments/assets/8d200b24-5c53-4af5-bc54-b2a1effef0e7)
 
 Here’s the ARIMA(1,1,1) forecast for the next 24 months.
 
@@ -414,7 +411,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Facebook Prophet Forecast of U.S. Median Home Prices.png](Predicting%20U%20S%20Median%20Home%20Prices%201d5f195e1902807986b8d69412a96db9/Facebook_Prophet_Forecast_of_U.S._Median_Home_Prices.png)
+![Facebook Prophet Forecast of U S  Median Home Prices](https://github.com/user-attachments/assets/e5c34cca-9cca-4d5f-98cc-a3d02fb333b7)
 
 Perfect — that chart looks great!
 
